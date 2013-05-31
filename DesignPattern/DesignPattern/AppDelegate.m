@@ -11,6 +11,10 @@
 #import "Context.h"
 #import "ContextSub.h"
 
+#import "ConcreteComponent.h"
+#import "ConcreteDecorator.h"
+
+
 @implementation AppDelegate
 
 - (void)dealloc
@@ -56,11 +60,14 @@
     [contextsub getResult];
     
     
+    // test 装饰模式
     
-    
-    
-    
-    
+    id <Component> concreteComponent=[[ConcreteComponent alloc] init];
+    Decorator *decorator=[[ConcreteDecorator alloc] init];
+    [decorator setComponent:concreteComponent];
+    [decorator operation];
+    [concreteComponent release];
+    [decorator release];
     
     
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];

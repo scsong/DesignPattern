@@ -26,6 +26,9 @@
 		84D1EF941755994200F62015 /* Strategy.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D1EF931755994200F62015 /* Strategy.m */; };
 		84D1EF9717559B1200F62015 /* Context.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D1EF9617559B1200F62015 /* Context.m */; };
 		84D1EF9B1755A3EF00F62015 /* ContextSub.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D1EF9A1755A3EF00F62015 /* ContextSub.m */; };
+		84E285211758365200327C3B /* ConcreteComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E285201758365200327C3B /* ConcreteComponent.m */; };
+		84E285241758369400327C3B /* Decorator.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E285231758369400327C3B /* Decorator.m */; };
+		84E2852717583AE700327C3B /* ConcreteDecorator.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E2852617583AE700327C3B /* ConcreteDecorator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +71,13 @@
 		84D1EF9617559B1200F62015 /* Context.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Context.m; sourceTree = "<group>"; };
 		84D1EF991755A3EF00F62015 /* ContextSub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContextSub.h; sourceTree = "<group>"; };
 		84D1EF9A1755A3EF00F62015 /* ContextSub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContextSub.m; sourceTree = "<group>"; };
+		84E2851E175835FE00327C3B /* Component.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Component.h; sourceTree = "<group>"; };
+		84E2851F1758365200327C3B /* ConcreteComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConcreteComponent.h; sourceTree = "<group>"; };
+		84E285201758365200327C3B /* ConcreteComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConcreteComponent.m; sourceTree = "<group>"; };
+		84E285221758369400327C3B /* Decorator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Decorator.h; sourceTree = "<group>"; };
+		84E285231758369400327C3B /* Decorator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Decorator.m; sourceTree = "<group>"; };
+		84E2852517583AE700327C3B /* ConcreteDecorator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConcreteDecorator.h; sourceTree = "<group>"; };
+		84E2852617583AE700327C3B /* ConcreteDecorator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConcreteDecorator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +137,7 @@
 		8413379B1754E46500B8AE1B /* DesignPattern */ = {
 			isa = PBXGroup;
 			children = (
+				84E2851C175835B300327C3B /* 装饰模式 */,
 				84D1EF981755A25800F62015 /* 策略模式和简单工厂方法结合 */,
 				84D1EF901755929500F62015 /* 策略模式 */,
 				841337CA1754E4B700B8AE1B /* 简单工厂模式 */,
@@ -199,6 +210,20 @@
 				84D1EF9A1755A3EF00F62015 /* ContextSub.m */,
 			);
 			path = "策略模式和简单工厂方法结合";
+			sourceTree = "<group>";
+		};
+		84E2851C175835B300327C3B /* 装饰模式 */ = {
+			isa = PBXGroup;
+			children = (
+				84E2851E175835FE00327C3B /* Component.h */,
+				84E2851F1758365200327C3B /* ConcreteComponent.h */,
+				84E285201758365200327C3B /* ConcreteComponent.m */,
+				84E285221758369400327C3B /* Decorator.h */,
+				84E285231758369400327C3B /* Decorator.m */,
+				84E2852517583AE700327C3B /* ConcreteDecorator.h */,
+				84E2852617583AE700327C3B /* ConcreteDecorator.m */,
+			);
+			path = "装饰模式";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -318,6 +343,9 @@
 				84D1EF941755994200F62015 /* Strategy.m in Sources */,
 				84D1EF9717559B1200F62015 /* Context.m in Sources */,
 				84D1EF9B1755A3EF00F62015 /* ContextSub.m in Sources */,
+				84E285211758365200327C3B /* ConcreteComponent.m in Sources */,
+				84E285241758369400327C3B /* Decorator.m in Sources */,
+				84E2852717583AE700327C3B /* ConcreteDecorator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
